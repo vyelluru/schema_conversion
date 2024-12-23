@@ -1,0 +1,41 @@
+.convert-schema {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.upload-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.upload-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.convert-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.convert-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+.confirm-mapping {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.mapping-list {
+  margin: 20px 0;
+}
+
+.mapping-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.actions {
+  text-align: center;
+}
+
+.save-button, .download-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.save-button:hover, .download-button:hover {
+  background-color: #45a049;
+}

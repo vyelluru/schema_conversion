@@ -1,0 +1,81 @@
+{
+    "$schema": "(link unavailable)#",
+    "title": "PurchaseOrderSchema1",
+    "type": "object",
+    "properties": {
+      "purchaseOrderId": {
+        "type": "string",
+        "value": "PO12345"
+      },
+      "customerName": {
+        "type": "string",
+        "value": "John Doe"
+      },
+      "orderDate": {
+        "type": "string",
+        "format": "date-time",
+        "value": "2024-12-02T15:30:00Z"
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/item"
+        },
+        "value": [
+          {
+            "productId": "P001",
+            "quantity": 2,
+            "unitPrice": 99.99
+          },
+          {
+            "productId": "P002",
+            "quantity": 1,
+            "unitPrice": 49.99
+          }
+        ]
+      },
+      "totalCost": {
+        "type": "number",
+        "format": "float",
+        "value": 249.97
+      },
+      "paymentTerms": {
+        "type": "string",
+        "value": "Net 30"
+      }
+    },
+    "definitions": {
+      "item": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "value": "P001"
+          },
+          "quantity": {
+            "type": "integer",
+            "value": 2
+          },
+          "unitPrice": {
+            "type": "number",
+            "format": "float",
+            "value": 99.99
+          }
+        },
+        "required": [
+          "productId",
+          "quantity",
+          "unitPrice"
+        ]
+      }
+    },
+    "required": [
+      "purchaseOrderId",
+      "customerName",
+      "orderDate",
+      "items",
+      "totalCost",
+      "paymentTerms"
+    ]
+  }
+  

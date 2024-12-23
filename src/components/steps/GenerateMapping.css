@@ -1,0 +1,54 @@
+.mapping-container {
+  display: flex;
+  gap: 20px;
+}
+
+.fields-list {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.fields-list h3 {
+  margin-top: 0;
+}
+
+.field-item {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: grab;
+}
+
+.field-item.target-item {
+  background-color: #f3f3ff;
+  cursor: pointer;
+}
+
+.field-item:active {
+  cursor: grabbing;
+}
+
+.mapping-results {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eef;
+}
+
+.mapping-results ul {
+  padding: 0;
+  list-style: none;
+}
+
+.mapping-results li {
+  padding: 5px;
+  background-color: #d9f9d9;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}

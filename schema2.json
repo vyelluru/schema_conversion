@@ -1,0 +1,95 @@
+{
+    "$schema": "(link unavailable)#",
+    "title": "PurchaseOrderSchema2",
+    "type": "object",
+    "properties": {
+      "orderId": {
+        "type": "integer",
+        "value": 67890
+      },
+      "customerInfo": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "value": "John Doe"
+          },
+          "address": {
+            "type": "string",
+            "value": "123 Main St, Springfield, IL"
+          }
+        },
+        "required": [
+          "name",
+          "address"
+        ]
+      },
+      "orderDetails": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/orderDetail"
+        },
+        "value": [
+          {
+            "productCode": "P001",
+            "quantityOrdered": 2,
+            "pricePerItem": 99.99
+          },
+          {
+            "productCode": "P002",
+            "quantityOrdered": 1,
+            "pricePerItem": 49.99
+          }
+        ]
+      },
+      "subTotal": {
+        "type": "number",
+        "format": "float",
+        "value": 249.97
+      },
+      "tax": {
+        "type": "number",
+        "format": "float",
+        "value": 24.99
+      },
+      "grandTotal": {
+        "type": "number",
+        "format": "float",
+        "value": 274.96
+      }
+    },
+    "definitions": {
+      "orderDetail": {
+        "type": "object",
+        "properties": {
+          "productCode": {
+            "type": "string",
+            "value": "P001"
+          },
+          "quantityOrdered": {
+            "type": "integer",
+            "value": 2
+          },
+          "pricePerItem": {
+            "type": "number",
+            "format": "float",
+            "value": 99.99
+          }
+        },
+        "required": [
+          "productCode",
+          "quantityOrdered",
+          "pricePerItem"
+        ]
+      }
+    },
+    "required": [
+      "orderId",
+      "customerInfo",
+      "orderDetails",
+      "subTotal",
+      "tax",
+      "grandTotal"
+    ]
+  }
+  
